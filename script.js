@@ -28,3 +28,9 @@ function converter() {
     document.getElementById("valorRublo").textContent = valorRublo.toFixed(2);
     document.getElementById("valorIene").textContent = valorIene.toFixed(2);
 }
+
+function limitarDigitos(input, maxLength) {
+    if (input.value.length > maxLength) {
+      input.value = input.value.slice(0, maxLength);
+    }
+  }
