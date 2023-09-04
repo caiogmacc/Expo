@@ -19,19 +19,34 @@
 
 	</div>
     <br>
-    <div id="selecionemoeda">
-		<div id="moedaestrangeira"></div>
+    <div id="caixacinzaclara">
+		<div id="caixacinza"></div>
 		<div class="caixaresult">
 			<h2 id="resultado">Valores Convertidos:</h2>
-			<p id="dó">Dólar: <span id="valorDolar">0.00</span></p> <br>
-			<p id="eu">Euro: <span id="valorEuro">0.00</span></p> <br>
-			<p id="kw">Kwanza: <span id="valorKwanza">0.00</span></p><br>
-			<p id="ru">Rublo: <span id="valorRublo">0.00</span></p><br>
-			<p id="ie">Iene Japonês: <span id="valorIene">0.00</span></p><br>
+			<div>
+				<p id="dó">Dólar:</p>
+				<p><span id="valorDolar">0.00</span></p>
+			</div>
+			<div>
+				<p id="eu">Euro:</p>
+				<p><span id="valorEuro">0.00</span></p>
+			</div>
+			<div>
+				<p id="kw">Kwanza:</p>
+				<p><span id="valorKwanza">0.00</span></p>
+			</div>
+			<div>
+				<p id="ru">Rublo:</p>
+				<p><span id="valorRublo">0.00</span></p>
+			</div>
+			<div>
+				<p id="ie">Iene Japonês:</p>
+				<p><span id="valorIene">0.00</span></p>
+			</div>
 		</div>
 	
 		<label id="VaalorReal">Valor em Reais:</label>
-		<input type="number" id="valorReal" value="0" maxlength="7">
+		<input type="number" id="valorReal" value="0" oninput="limitarDigitos(this, 6)">
 		<button onclick="converter()" id="botaor">Converter</button>
 
 		
