@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 10;
+    box-sizing: 0;
+
+}
+
+html{
+    height: inherit;
+}
+
+body{
+    width: 100vw;
+    height:100%;
+    background-image: url("./img/bacno.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    margin: 0;
+    padding: 0;
+} 
+
+
+
+.gradient-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    pointer-events: none;
+    z-index: 9999;
+}
+
+#titulo{
+    color: #fff;
+    text-align: center;
+    width: 560px;
+    position: absolute;
+    left: 370px;
+    top: 40px;
+    background-color: rgb(50, 55, 61);
+    border-radius: 12px;
+    border: 2px solid black;
+    font-size: 60px;
+}
+
+#selecionemoeda{
+    background-color: rgb(170, 170, 170);
+    width: 350px;
+    height: 390px; 
+    border-radius: 12px;
+    border: 2px solid white;
+    position: relative;
+    left: 470px;
+    top: 150px;
+}
+
+#moedaestrangeira{
+    background-color: rgb(41, 41, 41);
+    width: 320px;
+    height: 60px;
+    border-radius: 12px;
+    border: 3px solid white;
+    position: absolute;
+    top: 23px;
+    right: 11px;
+}
+
+
+#botaor{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-display:calc();
+    background-color: rgb(0, 119, 0);
+    border-radius: 12px;
+    width: 150px;
+    height: 40px;
+    border: 3px solid white;
+    position:absolute;
+    bottom: 30px;
+    right: 100px;
+}
+
+#voltar, #convert{
+    color:#fff;
+}
+
+#textbox{
+    position: relative;
+    right: 400px;
+}
+
+#VaalorReal{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40px;
+    right: 140px;
+}
+
+#valorReal{
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    width: 90px;
+}
+
+#resultado{
+    position: absolute;
+    top: 95px;
+    right: 75px;
+}
+
+#dó{
+    font-size: 24px;
+    position: absolute;
+    right: 120px;
+    top: 130px;
+    min-width: 50px;
+    height: fit-content;
+}
+
+#eu{
+    font-size: 24px;
+    position: absolute;
+    right: 123px;
+    top:165px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#kw{
+    font-size: 24px;
+    position: absolute;
+    right: 110px;
+    top:200px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#ru{
+    font-size: 24px;
+    position: absolute;
+    right: 115px;
+    top:235px;
+    width: fit-content;
+    height: fit-content;
+}
+#ie{
+    font-size: 24px;
+    position: absolute;
+    right: 90px;
+    top:269px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.caixaresult{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
